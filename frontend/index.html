@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Career Guidance Agent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Career Guidance Agent</h1>
+    <form id="profile-form">
+      <label>Name</label>
+      <input type="text" id="name" required />
+
+      <label>Age</label>
+      <input type="number" id="age" />
+
+      <label>Current education</label>
+      <input type="text" id="education" placeholder="B.Tech CSE 2nd year" required />
+
+      <label>Skills (comma separated)</label>
+      <input type="text" id="skills" placeholder="Python, SQL, HTML" required />
+
+      <label>Interests (comma separated)</label>
+      <input type="text" id="interests" placeholder="web dev, AI, data" required />
+
+      <label>Goals</label>
+      <textarea id="goals" placeholder="Describe your career goals..." required></textarea>
+
+      <label>Preferred countries (optional, comma separated)</label>
+      <input type="text" id="countries" placeholder="India, USA" />
+
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
